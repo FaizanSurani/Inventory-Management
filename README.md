@@ -32,7 +32,8 @@ A basic inventory management system to manage users, products, and stock levels 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/FaizanSurani/inventory-management.git
+git clone https://github.com/FaizanSurani/Inventory-Management.git
+
 cd inventory-management
 ```
 
