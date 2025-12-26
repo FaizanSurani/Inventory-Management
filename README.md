@@ -57,6 +57,64 @@ cd backend && npm start
 cd frontend && npm run dev
 ```
 
+# MongoDB Atlas Setup
+
+This guide explains how to set up MongoDB Atlas and connect it to the backend application.
+
+---
+
+## Step 1: Create a MongoDB Atlas Account
+
+1. Go to https://www.mongodb.com/atlas
+2. Sign up using Email, Google, or GitHub
+3. Verify your email and log in to the dashboard
+
+---
+
+## Step 2: Create a Cluster
+
+1. Click **Create** → **Cluster**
+2. Select **Shared Cluster (Free Tier – M0)**
+3. Choose a cloud provider (AWS / GCP / Azure)
+4. Select the nearest region (e.g., Mumbai)
+5. Click **Create Cluster**
+
+> Cluster creation may take a few minutes.
+
+---
+
+## Step 3: Create a Database User
+
+1. Navigate to **Database Access**
+2. Click **Add New Database User**
+3. Enter a username and password
+4. Set the role to **Read and write to any database**
+5. Save the user credentials
+
+---
+
+## Step 4: Configure Network Access
+
+1. Go to **Network Access**
+2. Click **Add IP Address**
+3. Choose one option:
+   - `0.0.0.0/0` (Allow access from anywhere – development only)
+   - Your system/server IP (recommended for production)
+4. Click **Confirm**
+
+---
+
+## Step 5: Get MongoDB Connection String
+
+1. Open **Clusters**
+2. Click **Connect**
+3. Select **Connect your application**
+4. Choose:
+   - Driver: Node.js
+   - Version: Latest
+5. Copy the connection string
+
+
 ### Database Models (MongoDB)
 
 ### 1. User Model
